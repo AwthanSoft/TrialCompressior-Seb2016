@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3574DBDA-78BF-4C53-A320-5D6702212CD8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Comp1</RootNamespace>
+    <AssemblyName>Comp1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.VisualStudio">
+      <HintPath>..\packages\NuGet.VisualStudio.4.0.0\lib\net45\NuGet.VisualStudio.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BWT\AsByte\BWTasByte01.cs" />
+    <Compile Include="BWT\AsByte\gistfile1.cs" />
+    <Compile Include="BWT\AsInt\BWTasNum01.cs" />
+    <Compile Include="BWT\AsInt\BWTint.cs" />
+    <Compile Include="ByMore\ChangerByMore\ChangerByMore01.cs" />
+    <Compile Include="ChangerListUniq\MakeChangerUniq\MakeChangerUniq01.cs" />
+    <Compile Include="ChangerListUniq\MakeChangerUniq\MakeChangerUniq02.cs" />
+    <Compile Include="ChangerNum\MoveToLast\MoveToLast01.cs" />
+    <Compile Include="CompBy\SeparateFiles\SumSeparateFile\SumSeparateFile01.cs" />
+    <Compile Include="MakeListUniq\MakeListUniq04.cs" />
+    <Compile Include="MakeTreeUniq\MakeTreeUniq01.cs" />
+    <Compile Include="MakeTreeUniq\MakeTreeUniq02.cs" />
+    <Compile Include="MakeTreeUniq\MakeTreeUniq03.cs" />
+    <Compile Include="MakeTreeUniq\MakeTreeUniq04.cs" />
+    <Compile Include="MakeTreeUniq\MakeTreeUniq05.cs" />
+    <Compile Include="MakeTreeUniq\MakeTreeUniq06.cs" />
+    <Compile Include="MakeTreeUniq\MakeTreeUniqInfoNode00.cs" />
+    <Compile Include="MergeSort\MakeTreeMergeSort\MakeTreeMergeSort01.cs" />
+    <Compile Include="MTF\MoveToByMore\MoveToByMore02.cs" />
+    <Compile Include="MTF\MoveToFirst01.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MakeListUniq\MakeListUniq01.cs" />
+    <Compile Include="MakeListUniq\MakeListUniq02.cs" />
+    <Compile Include="MakeListUniq\MakeListUniqByNod\ListUniqByNode01.cs" />
+    <Compile Include="MakeListUniq\MixTrialMakeListUniq.cs" />
+    <Compile Include="MergeSort\Merge01\CompByMerge01.cs" />
+    <Compile Include="MergeSort\Merge01\DeCompByMerge01.cs" />
+    <Compile Include="MergeSort\Merge01\InitialTree01.cs" />
+    <Compile Include="MTF\MoveToByMore\MoveToByMore01.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Public\CheckFiles\BitsChecker\CheckerBits00.cs" />
+    <Compile Include="Public\CheckFiles\CheckForm01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Public\CheckFiles\CheckForm01.Designer.cs">
+      <DependentUpon>CheckForm01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Public\CheckFiles\FileOperations\ExmineBlockUniq.cs" />
+    <Compile Include="Public\CheckFiles\OldChecker\Check Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Public\CheckFiles\OldChecker\Check Form.designer.cs">
+      <DependentUpon>Check Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Public\CheckFiles\OldChecker\Checker Count\CheckerCountByNum01.cs" />
+    <Compile Include="Public\CheckFiles\OldChecker\ExmineFile.cs" />
+    <Compile Include="Public\CheckFiles\OldChecker\ListComp.cs" />
+    <Compile Include="Public\CheckFiles\OldChecker\SortAndChanger.cs" />
+    <Compile Include="Public\CheckFiles\OldChecker\SortAndChanger2.cs" />
+    <Compile Include="Public\CheckFiles\UICheck01\OneChickForm01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Public\CheckFiles\UICheck01\OneChickForm01.Designer.cs">
+      <DependentUpon>OneChickForm01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Public\CheckFiles\UICheck01\OneViewChick01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Public\CheckFiles\UICheck01\OneViewChick01.Designer.cs">
+      <DependentUpon>OneViewChick01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Public\CheckFiles\UICheck01\TwoChickForm01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Public\CheckFiles\UICheck01\TwoChickForm01.Designer.cs">
+      <DependentUpon>TwoChickForm01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Public\Lib\BitArrayOperation.cs" />
+    <Compile Include="Public\Lib\IntBitsOperations\BitsToInt.cs" />
+    <Compile Include="Public\Lib\IntBitsOperations\IntBitsOperations.cs" />
+    <Compile Include="Public\Lib\NumberOperation.cs" />
+    <Compile Include="Public\ReaderFile\ReaderWriteFile02\FileReaderForm02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Public\ReaderFile\ReaderWriteFile02\FileReaderForm02.Designer.cs">
+      <DependentUpon>FileReaderForm02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Public\ReaderFile\ReaderWriteFile02\FileReaderInfo02.cs" />
+    <Compile Include="Public\ReaderFile\ReaderWriteFile02\FileReaderInfo02EventArgs.cs" />
+    <Compile Include="Public\ReaderFile\ReaderWriteFile02\ProgressForm02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Public\ReaderFile\ReaderWriteFile02\ProgressForm02.Designer.cs">
+      <DependentUpon>ProgressForm02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Public\ReaderFile\ReaderWriteFile02\ReaderFileSettings02.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>ReaderFileSettings02.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Public\ReaderFile\ReaderWriteFile02\ReaderSegment02\ReaderSegmentControl02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Public\ReaderFile\ReaderWriteFile02\ReaderSegment02\ReaderSegmentControl02.Designer.cs">
+      <DependentUpon>ReaderSegmentControl02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Public\ReaderFile\ReaderWriteFile02\ReaderSegment02\SegmentReader02.cs" />
+    <Compile Include="Public\ReaderFile\ReaderWriteFile02\ReaderSegment02\SegmentReaderForm02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Public\ReaderFile\ReaderWriteFile02\ReaderSegment02\SegmentReaderForm02.Designer.cs">
+      <DependentUpon>SegmentReaderForm02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Public\ReaderFile\ReaderWriteFile02\ReaderWriteFileBits\ReaderWriteFileBits02.cs" />
+    <Compile Include="Public\ReaderFile\ReaderWriteFile02\ReaderWriteFileNum\ReaderWriteFileNum02.cs" />
+    <Compile Include="Public\ReaderFile\ReaderWriteFile02\ReaderWriterOneNumMod\ReaderWriterOneNumMod02.cs" />
+    <Compile Include="Public\ReaderFile\ReaderWriteFile02\ReaderWriterOneNum\ReaderWriterOneNum02.cs" />
+    <Compile Include="Public\ReaderFile\ReaderWriteFile02\ReadWriteFile02.cs" />
+    <Compile Include="Public\ReaderFile\ReaderWriteFile02\Settings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings1.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Public\ReaderFile\ReaderWriterFile\FileReaderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Public\ReaderFile\ReaderWriterFile\FileReaderForm.Designer.cs">
+      <DependentUpon>FileReaderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Public\ReaderFile\ReaderWriterFile\ProgressForm01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Public\ReaderFile\ReaderWriterFile\ProgressForm01.Designer.cs">
+      <DependentUpon>ProgressForm01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Public\ReaderFile\ReaderWriterFile\ReadWriteFile.cs" />
+    <Compile Include="QuickSort\MakeTreeQuickSort\MakeTreeQuickSort01.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Public\CheckFiles\CheckForm01.resx">
+      <DependentUpon>CheckForm01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\CheckFiles\OldChecker\Check Form.resx">
+      <DependentUpon>Check Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\CheckFiles\UICheck01\OneChickForm01.resx">
+      <DependentUpon>OneChickForm01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\CheckFiles\UICheck01\OneViewChick01.resx">
+      <DependentUpon>OneViewChick01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\CheckFiles\UICheck01\TwoChickForm01.resx">
+      <DependentUpon>TwoChickForm01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\ReaderFile\ReaderWriteFile02\FileReaderForm02.resx">
+      <DependentUpon>FileReaderForm02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\ReaderFile\ReaderWriteFile02\ProgressForm02.resx">
+      <DependentUpon>ProgressForm02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\ReaderFile\ReaderWriteFile02\ReaderSegment02\ReaderSegmentControl02.resx">
+      <DependentUpon>ReaderSegmentControl02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\ReaderFile\ReaderWriteFile02\ReaderSegment02\SegmentReaderForm02.resx">
+      <DependentUpon>SegmentReaderForm02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\ReaderFile\ReaderWriterFile\FileReaderForm.resx">
+      <DependentUpon>FileReaderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public\ReaderFile\ReaderWriterFile\ProgressForm01.resx">
+      <DependentUpon>ProgressForm01.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Public\ReaderFile\ReaderWriteFile02\ReaderFileSettings02.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>ReaderFileSettings02.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Public\ReaderFile\ReaderWriteFile02\Settings1.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
